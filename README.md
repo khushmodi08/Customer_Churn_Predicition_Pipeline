@@ -89,69 +89,6 @@ churn-prediction-pipeline/
 └── README.md                      # This file
 ```
 
-## Quick Start
-
-### Prerequisites
-- Python 3.8+
-- Git
-- Docker (optional)
-
-### Installation
-
-#### Option 1: Automated Setup (Recommended)
-```bash
-git clone <repository-url>
-cd churn-prediction-pipeline
-
-# Run complete setup script
-bash scripts/setup_project.sh
-
-# Edit environment variables
-nano .env
-
-# Run pipeline
-python main_pipeline.py
-```
-
-#### Option 2: Manual Setup
-```bash
-git clone <repository-url>
-cd churn-prediction-pipeline
-
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Configure environment variables
-cp config/env/.env.example .env
-nano .env  # Edit with your credentials
-
-# Set up DVC
-bash scripts/setup_dvc.sh
-
-# Run pipeline
-python main_pipeline.py
-```
-
-#### Option 3: Docker Setup
-```bash
-git clone <repository-url>
-cd churn-prediction-pipeline
-
-# Set up environment
-cp config/env/.env.example .env
-nano .env  # Edit with your credentials
-
-# Run with Docker Compose
-docker-compose up
-
-# Or run setup first
-docker-compose --profile setup up dvc-setup
-docker-compose up pipeline
-```
 
 ## Pipeline Components
 
