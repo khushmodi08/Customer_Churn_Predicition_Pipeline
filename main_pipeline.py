@@ -26,6 +26,7 @@ import sys
 sys.path.append('src')
 
 # Import pipeline components
+# from folder.file import class
 from src.data_ingestion import DataIngestionPipeline
 from src.data_validation import DataValidator
 from src.raw_data_storage import RawDataStorage
