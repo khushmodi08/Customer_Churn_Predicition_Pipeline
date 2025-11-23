@@ -155,3 +155,8 @@ if __name__ == "__main__":
     pipeline = DataIngestionPipeline()
     result = pipeline.run_ingestion()
     print(f"Ingestion completed: {result}")
+
+
+#CSV gives the main large dataset
+#JSON gives a small supervised dataset for validation, testing, or merging
+#Both help build a more robust pipeline
